@@ -3,19 +3,8 @@ program addTwoNums;
 uses sysutils;
 
 const NUMBER_LEN = 41;
-
 type number = array[1..NUMBER_LEN] of integer;
-
 var num1, num2, sum: number;
-
-procedure printNumber(n: number);
-var i: integer;
-begin
-    for i := 1 to NUMBER_LEN do begin
-        write(n[i]);
-    end;
-    writeln();
-end;
 
 procedure fill(var n: number; data: integer);
 var i: integer;
@@ -76,6 +65,7 @@ begin
     start := false;
     for i := 1 to NUMBER_LEN do begin
         k := n[NUMBER_LEN-i+1];
+        {truncates zeros at the beginning}
         if k > 0 then
             start := true;
         if start then
@@ -86,29 +76,20 @@ begin
 end;
 
 function add(n1, n2: number): number;
-var i: integer;
+var i, currentSum, currentNum, remainder: integer;
     sum: number;
 begin
     fill(sum, 0);
-    add := rawToNumber('445');
-end;
+    
+    remainder := 0
+    for i := 1 to NUMBER_LEN do begin
+        currentSum := n1[i] + n2[i] + remainder;
+        currentNum := currentSum mod 10;
+        remainder := currentSum div 10;
+        sum[i] := currentNum;
+    end;
 
-procedure test();
-{test business logic}
-var nr1, nr2, sr: string;
-    n1, n2, s, se: number;
-begin
-    nr1 := '123';
-    nr2 := '321';
-    sr := '444';
-    se := rawToNumber(sr);
-    n1 := rawToNumber(nr1);
-    n2 := rawToNumber(nr2);
-    s := add(n1, n2);
-    write('n1: '); printNumber(n1);
-    write('n2: '); printNumber(n2);
-    write('s : '); printNumber(s);
-    write('se: '); printNumber(se);
+    add := sum;
 end;
 
 begin
@@ -119,6 +100,4 @@ begin
     readNums(num1, num2);
     sum := add(num1, num2);
     writeSum(sum);
-
-    test();
 end.
