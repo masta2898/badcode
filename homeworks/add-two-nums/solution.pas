@@ -80,7 +80,7 @@ var i, currentSum, currentNum, remainder: integer;
     sum: number;
 begin
     fill(sum, 0);
-    
+
     remainder := 0
     for i := 1 to NUMBER_LEN do begin
         currentSum := n1[i] + n2[i] + remainder;
