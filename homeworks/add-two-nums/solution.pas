@@ -1,7 +1,5 @@
 program addTwoNums;
 
-uses sysutils;
-
 const NUMBER_LEN = 41;
 type number = array[1..NUMBER_LEN] of integer;
 var num1, num2, sum: number;
@@ -80,15 +78,13 @@ var i, currentSum, currentNum, remainder: integer;
     sum: number;
 begin
     fill(sum, 0);
-    
-    remainder := 0
+    remainder := 0;
     for i := 1 to NUMBER_LEN do begin
         currentSum := n1[i] + n2[i] + remainder;
         currentNum := currentSum mod 10;
         remainder := currentSum div 10;
         sum[i] := currentNum;
     end;
-
     add := sum;
 end;
 
@@ -96,7 +92,7 @@ begin
     fill(num1, 0);
     fill(num2, 0);
     fill(sum, 0);
-    
+
     readNums(num1, num2);
     sum := add(num1, num2);
     writeSum(sum);
