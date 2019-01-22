@@ -17,7 +17,7 @@ begin
 
     close(inputFile);
 
-    middleNum := sum div numberCount;
+    middleNum := sum / numberCount;
     
     writeln('Sum: ', sum);
     writeln('Middle num: ', middleNum:5:3);
