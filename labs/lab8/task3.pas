@@ -3,6 +3,7 @@ program task3;
 const NUMBER_LEN = 41;
 type number = array[1..NUMBER_LEN] of integer;
 var num1, num2, sum: number;
+    i: integer;
 
 procedure fill(var n: number; data: integer);
 var i: integer;
@@ -14,11 +15,11 @@ end;
 
 function rawToNumber(raw: string): number;
 var len, i, k: integer;
-	n: number;
+    n: number;
 begin
     fill(n, 0);
-	len := length(raw);
-	for i := 1 to len do begin
+    len := length(raw);
+    for i := 1 to len do begin
         case raw[len-i+1] of
             '0': k := 0;
             '1': k := 1;
@@ -33,7 +34,7 @@ begin
         end;
         n[i] := k;
     end;
-	rawToNumber := n;
+    rawToNumber := n;
 end;
 
 procedure readNums(var a, b: number);
@@ -63,7 +64,9 @@ begin
         if n > 0 then
             start := true;
         if start then
-            write(n);
+            write(n)
+        else
+            write(' ');
     end;
     writeln();
 end;
@@ -92,6 +95,10 @@ begin
     sum := add(num1, num2);
     
     printNumber(num1);
+    writeln('+');
     printNumber(num2);
+    for i := 1 to NUMBER_LEN+1 do
+        write('-');
+    writeln();
     printNumber(sum);
 end.
