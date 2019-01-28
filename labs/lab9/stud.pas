@@ -41,6 +41,9 @@ interface
   {Searches for students with specified name. Returns empty StudentsArray (size = 0) if no any student found}
   function GetByName(students: StudentsArray; name: string): StudentsArray;
 
+  {Searches for students with specified year. Returns empty StudentsArray (size = 0) if no any student found}
+  function GetByYear(students: StudentsArray; year: Integer): StudentsArray;
+
   {Calculates an average mark for student}
   function GetAverageMark(s: student): Real;
 
@@ -113,6 +116,8 @@ implementation
   var i, m: Integer;
       studentsWithMark: StudentsArray;
   begin
+    studentsWithMark := NewStudentsArray();
+
     for i := 0 to students.size - 1 do
       for m := 1 to Length(students.data[i].marks) do
         if students.data[i].marks[m] = mark then
@@ -125,11 +130,26 @@ implementation
   var i: Integer;
       studentsWithName: StudentsArray;
   begin
+    studentsWithName := NewStudentsArray();
+
     for i := 0 to students.size - 1 do
       if students.data[i].name = name then
         AppendStudent(studentsWithName, students.data[i]);
 
     GetByName := studentsWithName;
+  end;
+
+  function GetByYear(students: StudentsArray; year: Integer): StudentsArray;
+  var i: Integer;
+      studentsWithYear: StudentsArray;
+  begin
+    studentsWithYear := NewStudentsArray();
+
+    for i := 0 to students.size - 1 do
+      if students.data[i].year = year then
+        AppendStudent(studentsWithYear, students.data[i]);
+
+    GetByYear := studentsWithYear;
   end;
 
   function GetAverageMark(s: Student): Real;
