@@ -35,7 +35,7 @@ begin
     if GetById(studentsWithBadMarks, students.data[i].id).id = -1 then
       AppendStudent(studentsWithGoodMarks, students.data[i]);
 
-  SaveStudentsInDb(studentsWithGoodMarks, dbFilename);
+  AppendStudents(connection, studentsWithGoodMarks);
   CloseDbConnection(connection);
 end;
 
