@@ -21,7 +21,7 @@ interface
   {Appends students to the connected database. Adds information to original database content}
   procedure AppendStudents(var connection: DbConnection; students: StudentsArray);
 
-  {}
+  {Erases database content}
   procedure DropDb(var connection: DbConnection);
 
   {Closes active database connection}
