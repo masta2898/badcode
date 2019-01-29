@@ -28,6 +28,7 @@ var i: Integer;
 begin
   connection := DbConnect(dbFilename);
   students := LoadStudents(connection);
+  studentsWithGoodMarks := NewStudentsArray();
   studentsWithBadMarks := GetByMark(students, 2);
   DropDb(connection);
 
@@ -48,7 +49,8 @@ begin
   WriteLn('4. Show students from 2005 year.');
   WriteLn('5. Show students with bad marks.');
   WriteLn('6. Remove students with bad marks from database.');
-  WriteLn('7. Exit');
+  WriteLn('7. Show repeated names.');
+  WriteLn('0. Exit');
 end;
 
 procedure Main();
@@ -57,7 +59,7 @@ var students, fromYearStudents, withMarkStudents: StudentsArray;
     s: Student;
     choose: Integer;
 begin
-  students := NewStudentsArray();
+  students := LoadStudentsFromDb(DB_FILENAME);
 
   while true do
   begin
@@ -67,7 +69,6 @@ begin
 
     if choose = 1 then
     begin
-      students := LoadStudentsFromDb(DB_FILENAME);
       ShowStudents(students);
     end;
 
@@ -98,9 +99,15 @@ begin
     if choose = 6 then
     begin
       FilterBadMarks(DB_FILENAME);
+	  students := LoadStudentsFromDb(DB_FILENAME);
     end;
 
-    if choose = 7 then
+	if choose = 7 then
+	begin
+		ShowRepeatedNames(students);
+	end;
+
+    if choose = 0 then
       break;
   end;
   WriteLn('Goodbye!');
@@ -109,3 +116,4 @@ end;
 begin
   Main();
 end.
+

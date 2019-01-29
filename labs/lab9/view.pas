@@ -154,11 +154,15 @@ implementation
   var i: Integer;
       repeatingNames: RepeatingNamesMap;
   begin
+	repeatingNames.size := 0;
+	SetLength(repeatingNames.data, 8);
+
     for i := 0 to students.size - 1 do
       AppendName(repeatingNames, students.data[i].name);
 
     for i := 0 to repeatingNames.size - 1 do
-      WriteLn(repeatingNames.data[i].name:20, ' repeats ', repeatingNames.data[i].repeatNumber:5, ' times.');
+	  if repeatingNames.data[i].repeatNumber > 1 then
+        WriteLn(repeatingNames.data[i].name:20, ' repeats ', repeatingNames.data[i].repeatNumber:5, ' times.');
   end;
 
 end.
