@@ -19,8 +19,6 @@ type
     firstNumberField: TEdit;
     aLabel: TLabel;
     bLabel: TLabel;
-    equalLabel: TLabel;
-    answerLabel: TLabel;
     secondNumberField: TEdit;
     procedure AddButtonClick(Sender: TObject);
     procedure DivideButtonClick(Sender: TObject);
@@ -51,7 +49,7 @@ var a, b, sum: integer;
 begin
   GetNumbers(a, b);
   sum := a + b;
-  answerLabel.Caption := IntToStr(sum);
+  ShowMessage('A + B = ' + IntToStr(sum));
 end;
 
 procedure TCalculatorForm.DivideButtonClick(Sender: TObject);
@@ -59,7 +57,7 @@ var a, b, division: Integer;
 begin
   GetNumbers(a, b);
   division := a div b;
-  answerLabel.Caption := IntToStr(division);
+  ShowMessage('A / B = ' + IntToStr(division));
 end;
 
 procedure TCalculatorForm.MulButtonClick(Sender: TObject);
@@ -67,7 +65,7 @@ var a, b, mul: Integer;
 begin
   GetNumbers(a, b);
   mul := a * b;
-  answerLabel.Caption := IntToStr(mul);
+  ShowMessage('A * B = ' + IntToStr(mul));
 end;
 
 procedure TCalculatorForm.SubButtonClick(Sender: TObject);
@@ -75,7 +73,7 @@ var a, b, sub: Integer;
 begin
   GetNumbers(a, b);
   sub := a - b;
-  answerLabel.Caption := IntToStr(sub);
+  ShowMessage('A - B = ' + IntToStr(sub));
 end;
 
 end.
