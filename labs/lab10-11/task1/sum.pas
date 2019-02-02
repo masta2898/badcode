@@ -9,40 +9,73 @@ uses
 
 type
 
-  { TSumForm }
+  { TCalculatorForm }
 
-  TSumForm = class(TForm)
-    calculateButton: TButton;
+  TCalculatorForm = class(TForm)
+    AddButton: TButton;
+    DivideButton: TButton;
+    MulButton: TButton;
+    SubButton: TButton;
     firstNumberField: TEdit;
     aLabel: TLabel;
     bLabel: TLabel;
-    plusLabel: TLabel;
     equalLabel: TLabel;
     answerLabel: TLabel;
     secondNumberField: TEdit;
-    procedure calculateButtonClick(Sender: TObject);
+    procedure AddButtonClick(Sender: TObject);
+    procedure DivideButtonClick(Sender: TObject);
+    procedure MulButtonClick(Sender: TObject);
+    procedure SubButtonClick(Sender: TObject);
   private
-
+    procedure GetNumbers(var a, b: Integer);
   public
 
   end;
 
 var
-  SumForm: TSumForm;
+  CalculatorForm: TCalculatorForm;
 
 implementation
 
 {$R *.lfm}
 
-{ TSumForm }
+{ TCalculatorForm }
+procedure TCalculatorForm.GetNumbers(var a, b: Integer);
+begin
+  a := StrToInt(firstNumberField.Text);
+  b := StrToInt(secondNumberField.Text);
+end;
 
-procedure TSumForm.calculateButtonClick(Sender: TObject);
+procedure TCalculatorForm.AddButtonClick(Sender: TObject);
 var a, b, sum: integer;
 begin
-     a := StrToInt(firstNumberField.Text);
-     b := StrToInt(secondNumberField.Text);
-     sum := a + b;
-     answerLabel.Caption := IntToStr(sum);
+  GetNumbers(a, b);
+  sum := a + b;
+  answerLabel.Caption := IntToStr(sum);
+end;
+
+procedure TCalculatorForm.DivideButtonClick(Sender: TObject);
+var a, b, division: Integer;
+begin
+  GetNumbers(a, b);
+  division := a div b;
+  answerLabel.Caption := IntToStr(division);
+end;
+
+procedure TCalculatorForm.MulButtonClick(Sender: TObject);
+var a, b, mul: Integer;
+begin
+  GetNumbers(a, b);
+  mul := a * b;
+  answerLabel.Caption := IntToStr(mul);
+end;
+
+procedure TCalculatorForm.SubButtonClick(Sender: TObject);
+var a, b, sub: Integer;
+begin
+  GetNumbers(a, b);
+  sub := a - b;
+  answerLabel.Caption := IntToStr(sub);
 end;
 
 end.
