@@ -1,0 +1,72 @@
+object PicturesForm: TPicturesForm
+  Left = 607
+  Height = 372
+  Top = 212
+  Width = 526
+  Caption = 'Pictures'
+  ClientHeight = 372
+  ClientWidth = 526
+  DesignTimePPI = 86
+  LCLVersion = '1.8.4.0'
+  object Picture: TImage
+    Left = 56
+    Height = 264
+    Top = 32
+    Width = 416
+    KeepOriginXWhenClipped = True
+    KeepOriginYWhenClipped = True
+    ParentShowHint = False
+    Proportional = True
+    Stretch = True
+  end
+  object ShowCatButton: TButton
+    Left = 64
+    Height = 22
+    Top = 328
+    Width = 67
+    Caption = 'Cat'
+    Color = clGray
+    OnClick = ShowCatButtonClick
+    TabOrder = 0
+  end
+  object ShowFlowerButton: TButton
+    Left = 144
+    Height = 22
+    Top = 328
+    Width = 67
+    Caption = 'Flower'
+    Color = clGray
+    OnClick = ShowFlowerButton1Click
+    TabOrder = 1
+  end
+  object ShowStarButton: TButton
+    Left = 224
+    Height = 22
+    Top = 328
+    Width = 67
+    Caption = 'Star'
+    Color = clGray
+    OnClick = ShowStarButton1Click
+    TabOrder = 2
+  end
+  object ShowCastleButton: TButton
+    Left = 304
+    Height = 22
+    Top = 328
+    Width = 67
+    Caption = 'Castle'
+    Color = clGray
+    OnClick = ShowCastleButtonClick
+    TabOrder = 3
+  end
+  object ShowLandscapeButton: TToggleBox
+    Left = 384
+    Height = 22
+    Top = 328
+    Width = 80
+    Caption = 'Landscape'
+    Color = clGray
+    OnChange = ShowLandscapeButtonChange
+    TabOrder = 4
+  end
+end

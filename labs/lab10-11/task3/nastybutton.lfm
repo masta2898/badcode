@@ -1,0 +1,30 @@
+object NastyButtonForm: TNastyButtonForm
+  Left = 715
+  Height = 215
+  Top = 295
+  Width = 287
+  Caption = 'Nasty Button'
+  ClientHeight = 215
+  ClientWidth = 287
+  DesignTimePPI = 86
+  LCLVersion = '1.8.4.0'
+  object aSimpleButton: TButton
+    Left = 53
+    Height = 22
+    Top = 92
+    Width = 67
+    Caption = 'Simple'
+    Color = clGray
+    TabOrder = 0
+  end
+  object aNastyButton: TButton
+    Left = 168
+    Height = 22
+    Top = 92
+    Width = 67
+    Caption = 'Nasty'
+    Color = clGray
+    OnMouseMove = aNastyButtonMouseMove
+    TabOrder = 1
+  end
+end

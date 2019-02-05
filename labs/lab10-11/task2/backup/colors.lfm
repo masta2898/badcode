@@ -1,0 +1,101 @@
+object ColorsForm: TColorsForm
+  Left = 715
+  Height = 215
+  Top = 341
+  Width = 287
+  Caption = 'Colors'
+  ClientHeight = 215
+  ClientWidth = 287
+  DesignTimePPI = 86
+  LCLVersion = '1.8.4.0'
+  object WhiteButton: TButton
+    Left = 36
+    Height = 22
+    Top = 25
+    Width = 67
+    Caption = 'White'
+    OnClick = WhiteButtonClick
+    TabOrder = 0
+  end
+  object BlackButton: TButton
+    Left = 36
+    Height = 22
+    Top = 56
+    Width = 67
+    Caption = 'Black'
+    OnClick = BlackButtonClick
+    TabOrder = 1
+  end
+  object RedButton: TButton
+    Left = 36
+    Height = 22
+    Top = 88
+    Width = 67
+    Caption = 'Red'
+    OnClick = RedButtonClick
+    TabOrder = 2
+  end
+  object OrangeButton: TButton
+    Left = 36
+    Height = 22
+    Top = 120
+    Width = 67
+    Caption = 'Orange'
+    OnClick = OrangeButtonClick
+    TabOrder = 3
+  end
+  object YellowButton: TButton
+    Left = 36
+    Height = 22
+    Top = 152
+    Width = 67
+    Caption = 'Yellow'
+    OnClick = YellowButtonClick
+    TabOrder = 4
+  end
+  object GreenButton: TButton
+    Left = 128
+    Height = 22
+    Top = 25
+    Width = 67
+    Caption = 'Green'
+    OnClick = GreenButtonClick
+    TabOrder = 5
+  end
+  object BlueButton: TButton
+    Left = 128
+    Height = 22
+    Top = 56
+    Width = 67
+    Caption = 'BlueButton'
+    OnClick = BlueButtonClick
+    TabOrder = 6
+  end
+  object PurlpeButton: TButton
+    Left = 128
+    Height = 22
+    Top = 88
+    Width = 67
+    Caption = 'Purple'
+    OnClick = PurlpeButtonClick
+    TabOrder = 7
+  end
+  object VioletButton: TButton
+    Left = 128
+    Height = 22
+    Top = 120
+    Width = 67
+    Caption = 'Violet'
+    OnClick = VioletButtonClick
+    TabOrder = 8
+  end
+  object GrayButton: TButton
+    Left = 128
+    Height = 22
+    Top = 152
+    Width = 67
+    Caption = 'Gray'
+    OnClick = GrayButtonClick
+    TabOrder = 9
+  end
+end

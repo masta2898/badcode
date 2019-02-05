@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="sumproj.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="45" Y="18"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="sum.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CalculatorForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="38"/>
+        <CursorPos X="43" Y="52"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../task2/colorsproj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../task2/colors.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ColorsForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="29" Y="14"/>
+        <UsageCount Value="21"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="sum.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit4>
+    </Units>
+    <JumpHistory Count="14" HistoryIndex="13">
+      <Position1>
+        <Filename Value="sum.pas"/>
+        <Caret Line="33" Column="55" TopLine="2"/>
+      </Position1>
+      <Position2>
+        <Filename Value="sum.pas"/>
+        <Caret Line="32" Column="55"/>
+      </Position2>
+      <Position3>
+        <Filename Value="sum.pas"/>
+        <Caret Line="41" Column="6"/>
+      </Position3>
+      <Position4>
+        <Filename Value="sum.pas"/>
+        <Caret Line="42" Column="6"/>
+      </Position4>
+      <Position5>
+        <Filename Value="sum.pas"/>
+        <Caret Line="41" Column="6"/>
+      </Position5>
+      <Position6>
+        <Filename Value="sum.pas"/>
+        <Caret Line="43" Column="6"/>
+      </Position6>
+      <Position7>
+        <Filename Value="sum.pas"/>
+        <Caret Line="51" Column="3" TopLine="8"/>
+      </Position7>
+      <Position8>
+        <Filename Value="sum.pas"/>
+        <Caret Line="52" Column="3" TopLine="8"/>
+      </Position8>
+      <Position9>
+        <Filename Value="sum.pas"/>
+        <Caret Line="63" Column="23" TopLine="16"/>
+      </Position9>
+      <Position10>
+        <Filename Value="sum.pas"/>
+        <Caret Line="60" Column="66" TopLine="26"/>
+      </Position10>
+      <Position11>
+        <Filename Value="sum.pas"/>
+        <Caret Line="62" Column="43" TopLine="32"/>
+      </Position11>
+      <Position12>
+        <Filename Value="sum.pas"/>
+        <Caret Line="49" Column="63" TopLine="43"/>
+      </Position12>
+      <Position13>
+        <Filename Value="sum.pas"/>
+        <Caret Line="48" Column="63" TopLine="42"/>
+      </Position13>
+      <Position14>
+        <Filename Value="sum.pas"/>
+        <Caret Line="47" Column="63" TopLine="41"/>
+      </Position14>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

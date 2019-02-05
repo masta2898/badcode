@@ -1,0 +1,83 @@
+object CalculatorForm: TCalculatorForm
+  Left = 760
+  Height = 222
+  Top = 388
+  Width = 287
+  Caption = 'Calculator'
+  ClientHeight = 222
+  ClientWidth = 287
+  DesignTimePPI = 86
+  LCLVersion = '1.8.4.0'
+  object firstNumberField: TEdit
+    Left = 88
+    Height = 27
+    Top = 32
+    Width = 72
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object secondNumberField: TEdit
+    Left = 88
+    Height = 27
+    Top = 96
+    Width = 72
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object AddButton: TButton
+    Left = 64
+    Height = 22
+    Top = 152
+    Width = 24
+    Caption = '+'
+    Color = clBlack
+    OnClick = AddButtonClick
+    TabOrder = 2
+  end
+  object aLabel: TLabel
+    Left = 56
+    Height = 17
+    Top = 40
+    Width = 11
+    Caption = 'A:'
+    ParentColor = False
+  end
+  object bLabel: TLabel
+    Left = 56
+    Height = 17
+    Top = 101
+    Width = 11
+    Caption = 'B:'
+    ParentColor = False
+  end
+  object SubButton: TButton
+    Left = 96
+    Height = 22
+    Top = 152
+    Width = 24
+    Caption = '-'
+    Color = clBlack
+    OnClick = SubButtonClick
+    TabOrder = 3
+  end
+  object MulButton: TButton
+    Left = 128
+    Height = 22
+    Top = 152
+    Width = 24
+    Caption = '*'
+    Color = clBlack
+    OnClick = MulButtonClick
+    TabOrder = 4
+  end
+  object DivideButton: TButton
+    Left = 160
+    Height = 22
+    Top = 152
+    Width = 24
+    Caption = '/'
+    Color = clBlack
+    OnClick = DivideButtonClick
+    TabOrder = 5
+  end
+end

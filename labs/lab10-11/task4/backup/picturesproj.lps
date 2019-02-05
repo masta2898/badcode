@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="picturesproj.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="pictures.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PicturesForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="30"/>
+        <CursorPos X="62" Y="50"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="pictures.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="picturesproj.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="7" HistoryIndex="6">
+      <Position1>
+        <Filename Value="pictures.pas"/>
+        <Caret Line="15" Column="24" TopLine="4"/>
+      </Position1>
+      <Position2>
+        <Filename Value="pictures.pas"/>
+        <Caret Line="46" Column="78" TopLine="9"/>
+      </Position2>
+      <Position3>
+        <Filename Value="pictures.pas"/>
+        <Caret Line="45" Column="78" TopLine="9"/>
+      </Position3>
+      <Position4>
+        <Filename Value="pictures.pas"/>
+        <Caret Line="44" Column="78" TopLine="9"/>
+      </Position4>
+      <Position5>
+        <Filename Value="pictures.pas"/>
+        <Caret Line="45" Column="78" TopLine="9"/>
+      </Position5>
+      <Position6>
+        <Filename Value="pictures.pas"/>
+        <Caret Line="52" Column="78" TopLine="13"/>
+      </Position6>
+      <Position7>
+        <Filename Value="pictures.pas"/>
+        <Caret Line="53" Column="76" TopLine="24"/>
+      </Position7>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
